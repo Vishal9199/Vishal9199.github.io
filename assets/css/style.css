@@ -200,8 +200,9 @@ nav i {
 } */
 
 main {
-  background: url(../../assets/img/background.jpg) repeat;
-  pading-left: 190px;
+  background: url(../../assets/img/background.png) repeat;
+  background-size: cover;
+  background-position: center;
 }
 
 dl {
@@ -314,10 +315,10 @@ h3 {
 
 /* Original */
 
-#intro.section {
-  background: url(../../assets/img/bg.jpg) no-repeat top center/cover;
+/* #intro.section {
+  background: url(../../assets/img/white-ai-wallpaper.jpg) no-repeat top center/cover;
   position: relative;
-}
+} */
 
 #intro.section {
   background-color: #f2f2f2;
