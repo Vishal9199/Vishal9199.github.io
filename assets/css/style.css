@@ -199,11 +199,10 @@ nav i {
   padding-left: 190px;
 } */
 
-/* main {
+main {
   background: url(../../assets/img/background.jpg) repeat;
-  background-size: cover;
-  background-position: center;
-} */
+  pading-left: 190px;
+}
 
 dl {
   margin-top: 0.5rem;
@@ -316,7 +315,7 @@ h3 {
 /* Original */
 
 #intro.section {
-  background: url(../../assets/img/background.jpg) no-repeat top center/cover;
+  background: url(../../assets/img/bg.jpg) no-repeat top center/cover;
   position: relative;
 }
 
