@@ -200,8 +200,9 @@ nav i {
 } */
 
 main {
-  background: url(../../assets/img/bg.png) repeat;
-  padding-left: 190px;
+  background: url(../../assets/img/background.png) repeat;
+  background-size: cover;
+  background-position: center;
 }
 
 dl {
