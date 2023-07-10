@@ -200,9 +200,8 @@ nav i {
 } */
 
 main {
-  background: url(../../assets/img/background.png) repeat;
-  background-size: cover;
-  background-position: center;
+  background: url(../../assets/img/bg.png) repeat;
+  padding-left: 190px;
 }
 
 dl {
@@ -321,7 +320,7 @@ h3 {
 } */
 
 #intro.section {
-  background-color: #f2f2f2;
+  background: #a7ffeb repeat;
   position: relative;
 }
 
