@@ -948,14 +948,15 @@ Collision avoidance, Live location coordinates in map.
               class="hoverline" target="_blank">linkedin.com/in/vishal-kumar-mahatha-6577931b9/</a></a>
         </p>
 
-        <img src="assets/img/Image_Vishal.jpeg" alt="Vishal Kumar Mahatha - Professional Photo" class="responsive-img">
+        <!-- <img src="assets/img/Image_Vishal.jpeg" alt="Vishal Kumar Mahatha - Professional Photo" class="responsive-img"> -->
 
-        <iframe style="border-radius:12px" src="https://open.spotify.com/embed/playlist/37i9dQZEVXbLZ52XmnySJg?utm_source=generator"
-          width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay;
-          clipboard-write; encrypted-media;
-          fullscreen;
-          picture-in-picture" loading="lazy">
+        <button class="spotify-button" onclick="showPlaylist()">Listen to My Playlist</button>
+        <!-- Hidden iframe, initially not displayed -->
+        <iframe id="spotify-iframe" src="https://open.spotify.com/embed/playlist/37i9dQZEVXbLZ52XmnySJg"
+          width="100%" height="80" frameborder="0" allowtransparency="true" allow="encrypted-media" loading="lazy"
+          style="display: none;">
           </iframe>
+
       </div>
     </section>
   </main>
