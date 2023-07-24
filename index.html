@@ -46,7 +46,7 @@
   <meta name="google-site-verification" content="_qxK8tePiU2fhnwlwnJ7pkDFnj1k2EiKq_cYGy1Cb84" />
 </head>
 
-<body oncontextmenu="return false;">
+<body oncontextmenu="return false;" onkeydown="return disableShortcut(event);">
   
   <!-- Google Tag Manager (noscript) -->
   <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PGZH8HT"
@@ -964,7 +964,15 @@ Collision avoidance, Live location coordinates in map.
             iframe.style.display = 'block';
           }
         </script> -->
-
+        <script>
+          function disableShortcut(event) {
+            // Check if Command key (Mac) or Control key (Windows/Linux) + U is pressed
+            if ((event.metaKey || event.ctrlKey) && event.keyCode === 85) {
+              event.preventDefault(); // Prevent the default action (viewing page source)
+              return false;
+            }
+          }
+        </script>
       </div>
     </section>
   </main>
