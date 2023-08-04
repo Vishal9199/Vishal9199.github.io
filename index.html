@@ -935,6 +935,25 @@ Collision avoidance, Live location coordinates in map.
     <section id="contact" class="section scrollspy full-height">
       <h3 class="page-title white-text teal">Contact</h3>
       <div class="container">
+        
+        <video id="myVideo" width="640" height="360" controls>
+        <source src="https://www.canva.com/design/DAFqi3uB4VU/MY7LpD7k5JiKciPNV24n5w/watch?utm_content=DAFqi3uB4VU&utm_campaign=designshare&utm_medium=link&utm_source=publishsharelink" type="video/mp4">
+        <!-- Add more <source> elements for different video formats (e.g., WebM, Ogg) to ensure broader browser support -->
+        Your browser does not support the video tag.
+    </video>
+
+    <script>
+        const video = document.getElementById('myVideo');
+
+        // Function to replay the video from the beginning
+        function replayVideo() {
+            video.currentTime = 0; // Set the current time to the beginning
+            video.play(); // Start playing the video
+        }
+
+        // Listen for the "ended" event and call the replayVideo function when the video ends
+        video.addEventListener('ended', replayVideo);
+        
         <p>
           <a aria-label="Call Vishal" data-position="top" data-tooltip="Call Vishal"
             class="btn-floating btn-large waves-effect waves-light blue-grey tooltipped"><i class="fa fa-phone"></i><a
@@ -975,15 +994,7 @@ Collision avoidance, Live location coordinates in map.
               aria-label="Vishal on Medium" href="https://medium.com/@vishalkrmahatha" class="hoverline"
               target="_blank">medium.com/@vishalkrmahatha</a></a>
         </p>
-        
-        <div style="position: relative; width: 100%; height: 0; padding-top: 56.2500%;
- padding-bottom: 0; box-shadow: 0 2px 8px 0 rgba(63,69,81,0.16); margin-top: 1.6em; margin-bottom: 0.9em; overflow: hidden;
- border-radius: 8px; will-change: transform;">
-  <iframe loading="lazy" style="position: absolute; width: 100%; height: 100%; top: 0; left: 0; border: none; padding: 0;margin: 0;"
-    src="https:&#x2F;&#x2F;www.canva.com&#x2F;design&#x2F;DAFqi3uB4VU&#x2F;watch?embed" allowfullscreen="allowfullscreen" allow="fullscreen">
-  </iframe>
-</div>
-<a href="https:&#x2F;&#x2F;www.canva.com&#x2F;design&#x2F;DAFqi3uB4VU&#x2F" rel="noopener"></a>
+                </script>
         
         <!-- <img src="assets/img/Image_Vishal.jpeg" alt="Vishal Kumar Mahatha - Professional Photo" class="responsive-img"> -->
 
