@@ -897,6 +897,32 @@ Collision avoidance, Live location coordinates in map.
       })
     })
   </script>
+  <script>
+  var vapiInstance = null;
+  const assistant = "1a1bd685-c542-4d08-99cc-a888bffd4d92"; // Substitute with your assistant ID
+  const apiKey = "06a770a3-9b6b-4298-88b0-642b559fc92e"; // Substitute with your Public key from Vapi Dashboard.
+  const buttonConfig = {}; // Modify this as required
+
+  (function (d, t) {
+    var g = document.createElement(t),
+      s = d.getElementsByTagName(t)[0];
+    g.src =
+      "https://cdn.jsdelivr.net/gh/VapiAI/html-script-tag@latest/dist/assets/index.js";
+    g.defer = true;
+    g.async = true;
+    s.parentNode.insertBefore(g, s);
+
+    g.onload = function () {
+      vapiInstance = window.vapiSDK.run({
+        apiKey: apiKey, // mandatory
+        assistant: assistant, // mandatory
+        config: buttonConfig, // optional
+      });
+    };
+  })(document, "script");
+
+</script>
+
 </body>
 
 </html>
